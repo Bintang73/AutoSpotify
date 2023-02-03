@@ -182,7 +182,7 @@ function activateSamsung($bearer)
     $headers[] = 'Spotify-App-Version: 8.6.4';
     $headers[] = 'X-Client-Id: 9a8d2f0ce77a4e248bb71fefcb557637';
     $headers[] = 'App-Platform: Android';
-    $headers[] = 'Client-Token: AABO4L2cDbrSECZRzSKnCGro2psTGWTRsvFi4nhMZOQgurSSedjentv981C9iJWPcgi6DPNpCdRDJhff/4qkEkGzUZFUo+Uw0SnoBxDrwx7MIYptWTis3ApEfc6VT2oqz5ed7cnb/Z4SHodeyw14bKYwR1k4JUFqb7XF76kHYTcGk7bAWTW+MkB02zUhaHmvlU2ircjq36Q2VaWfhHDsz9ZIRs1NnhpUy5bzWxlkVZ8Mt0st7vG5GFUXODsdncpngq48YL4/8T+i6D1kzuwsaPIe1ryG4L1b5LxfBZNvh4FQa6S3KfAo/cZvQBhHGZPbkIOJM34=';
+    $headers[] = 'Client-Token: ' . $token;
     $headers[] = 'Authorization: Bearer ' . $bearer;
     $headers[] = 'Accept-Encoding: gzip';
     return path($method, $headers, $url);
